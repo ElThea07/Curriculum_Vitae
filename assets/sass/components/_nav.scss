@@ -1,0 +1,157 @@
+.burgerbutton{
+    display: block;
+    position: absolute;
+    right: 20px;
+    font-size: 30px;
+    @include laptop-view{
+        display: none;
+    }
+    }
+.nav{
+    position: relative;
+    width: 100%;
+    display: flex;
+    background:$turque;
+    align-items: center;  
+    z-index: 5;
+    @include laptop-view{
+    position: fixed;
+    top: 0px;
+    width: 300px;
+    height: 100%;
+    background: $turque;
+    z-index: 1;
+    }
+    &__logo{
+        @include mobile-view{
+        position: relative;
+        left: 40px;
+        width: 100px;
+        height: 100px;   
+        border-radius: 50px;    
+        img{
+            position: absolute;
+            width: 170px;
+            top: -10px;
+            left: -40px;
+            
+        }
+        }
+        @include tablet-view{
+        position: relative;
+        left: 40px;
+        width: 100px;
+        height: 100px;   
+        border-radius: 50px;    
+        img{
+            position: absolute;
+            width: 170px;
+            top: -10px;
+            left: -40px;
+            
+        }
+    }
+    @include laptop-view{
+        position: relative;
+        top: -200px;
+        left: 62px;
+        width: 175px;
+        height: 165px;   
+        border-radius: 100px;    
+        img{
+            position: absolute;
+            width: 250px;
+            top: -10px;
+            left: -40px;
+            
+        }
+
+    }
+    @include laptopXL-view{
+        position: relative;
+        top: -280px;
+        left: 62px;
+        width: 175px;
+        height: 165px;   
+        border-radius: 100px;    
+        img{
+            position: absolute;
+            width: 250px;
+            top: -10px;
+            left: -40px;
+            
+        }
+
+    }
+    }
+    &__links{
+        display: none;
+        position: fixed;
+        width: 100%;
+        height: 94px;
+        top:100px;
+        left: 0px;
+        background:$turque;
+        opacity: 40%;
+        padding-top: 5px;
+        a{
+            text-decoration: none;
+            font-size: 0.9rem;
+            margin-left: 10px;
+            color: $black;
+            display: block;
+            text-transform: uppercase;
+        }
+        @include mobile-view{
+            display: none;
+            position: fixed;
+            width: 100%;
+            height: 94px;
+            top:100px;
+            left: 0px;
+            background:$turque;
+            opacity: 40%;
+            padding-top: 5px;
+            a{
+                font-size: 0.9rem;
+                margin-left: 10px;
+                color: $black;
+                display: block;
+                text-transform: uppercase;
+            }
+        }  
+        @include laptop-view{
+        display: block;
+        height: 250px;
+        width: 180px;
+        position: absolute;  
+        top: 350px;
+        left: 65px; 
+        text-decoration: none;
+        margin-right: 70px;
+        font-weight: bold;
+        opacity:100%;
+            a{
+                text-decoration: none;
+                font-size: 20px;
+                margin-bottom: 20px;
+                color: $marine;;
+            }
+            .nav__link-2{
+                color: $black;
+                opacity: 55%;
+            }
+        
+        }
+    }
+    
+}
+#burger{
+    display:none;
+}
+#burger:checked ~ .nav__links{
+    display: block;
+    @include laptop-view{
+        display: none;
+    }
+}

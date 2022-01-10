@@ -1,0 +1,120 @@
+.header{
+    position: relative;
+    @include mobile-view{
+        &__title{
+            height: 400px;
+            h1{
+                position: absolute;
+                width: 300px;
+                font-size: 40px;
+                top: 120px;
+            }
+            p{
+                position: absolute;
+                width: 367px;
+                color:$marine;
+                font-size: 17px;
+                top: 223px;
+            }
+        }
+        &__text{
+            position: relative;
+            width: 368px;
+            height: 250px;
+            bottom: 50px;
+            p{
+                position: absolute;
+                color:$marine;
+                font-size: 19px;
+                font-weight: lighter;
+        }
+        i{
+            position: relative;
+            color: $marine;
+            font-size: 30px;
+            top: 190px;
+        }
+    }
+}
+@include tablet-view{
+    &__title{
+        height: 400px;
+        h1{
+            position: absolute;
+            width: 530px;
+            font-size: 40px;
+            top: 120px;
+        }
+        p{
+            position: absolute;
+            width: 600px;
+            color:$marine;
+            font-size: 17px;
+            top: 180px;
+        }
+    }
+    &__text{
+        position: relative;
+        width: 698px;
+        height: 250px;
+        bottom: 100px;
+        p{
+            position: absolute;
+            color:$marine;
+            font-size: 19px;
+            font-weight: lighter;
+    }
+    i{
+        position: relative;
+        color: $marine;
+        font-size: 30px;
+        top: 150px;
+    }
+}
+
+}
+@include laptop-view{
+    position: relative;
+    left: 150px;
+    top: -11px;
+    width: 65%;
+    &__title{
+        height: 400px;
+        
+        h1{
+            position: absolute;
+            width: 621px;
+            font-size: 48px;
+            top: 120px;
+        }
+        p{
+            position: absolute;
+            width: 600px;
+            color:$marine;
+            font-size: 17px;
+            top: 191px;
+        }
+    }
+    &__text{
+        position: relative;
+        width: 622px;
+        height: 250px;
+        bottom: 100px;
+        
+        p{
+            position: absolute;
+            color:$marine; 
+            top: -22px;
+            font-size: 21px;
+            font-weight: lighter;
+
+    }
+    i{
+        position: relative;
+        color: $marine;
+        font-size: 40px;
+        top: 150px;
+    }
+}
+}
+}
